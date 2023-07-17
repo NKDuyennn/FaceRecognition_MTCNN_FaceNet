@@ -20,6 +20,10 @@ pip install -r requirements.txt
 3. Tải về models của FaceNet   
    Tải các model từ link https://drive.google.com/file/d/1EXPBSXwTaqrSC0OhUdXNmKSh9qJUQ55-/view    
    Tạo thư mục Models và extract các file vào thư mục này .
+## Chụp ảnh cho bộ data từ camera
+```c
+python src/face_capture.py
+```
 ## Tiền xử lí dữ liệu cắt khuôn mặt từ ảnh gốc
 ```c
 python src/align_dataset_mtcnn.py  dataset/FaceData/raw dataset/FaceData/processed --image_size 160 --margin 32  --random_order --gpu_memory_fraction 0.25
