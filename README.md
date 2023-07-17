@@ -17,8 +17,8 @@ Trong thư mục Dataset
 ```c
 pip install -r requirements.txt
 ```
-3. Tải về models của FaceNet
-   Tải các model từ link https://drive.google.com/file/d/1EXPBSXwTaqrSC0OhUdXNmKSh9qJUQ55-/view
+3. Tải về models của FaceNet   
+   Tải các model từ link https://drive.google.com/file/d/1EXPBSXwTaqrSC0OhUdXNmKSh9qJUQ55-/view    
    Tạo thư mục Models và extract các file vào thư mục này .
 ## Tiền xử lí dữ liệu cắt khuôn mặt từ ảnh gốc
 ```c
