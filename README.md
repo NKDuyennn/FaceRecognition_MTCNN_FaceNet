@@ -2,7 +2,7 @@
 ## Prepare
 1. Chuẩn bị dữ liệu khuôn mặt
 ```c
-Trong thư mục Dataset
+Trong thư mục dataset
 |-FaceData
    |---raw
    |-----Thư mục chứa ảnh nv1
@@ -22,11 +22,11 @@ pip install -r requirements.txt
    Tạo thư mục Models và extract các file vào thư mục này .
 ## Tiền xử lí dữ liệu cắt khuôn mặt từ ảnh gốc
 ```c
-python src/align_dataset_mtcnn.py  Dataset/FaceData/raw Dataset/FaceData/processed --image_size 160 --margin 32  --random_order --gpu_memory_fraction 0.25
+python src/align_dataset_mtcnn.py  dataset/FaceData/raw dataset/FaceData/processed --image_size 160 --margin 32  --random_order --gpu_memory_fraction 0.25
 ```
 ## Train model
 ```c
-python src/classifier.py TRAIN Dataset/FaceData/processed Models/20180402-114759.pb Models/facemodel.pkl --batch_size 1000
+python src/classifier.py TRAIN dataset/FaceData/processed Models/20180402-114759.pb Models/facemodel.pkl --batch_size 1000
 ```
 ## Kết quả
 ### Nhận dạng qua camera
